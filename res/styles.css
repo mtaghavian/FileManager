@@ -1,0 +1,64 @@
+/* Scrollbar */
+::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(245, 245, 245, 0.4);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(190, 190, 190, 0.4);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(170, 170, 170, 0.4);
+}
+
+body {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    overflow: overlay;
+}
+
+.HeaderHeight {
+    user-select: none;
+    height: 50px;
+    line-height: 50px;
+}
+
+.FileEntryName {
+    text-align: left;
+    flex: auto;
+    overflow: hidden;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 5px;
+}
+
+.FileEntrySize {
+    text-align: center;
+    flex: 0 1 auto;
+    padding-left: 5px;
+}
+
+.FileEntryDelete {
+    flex: 0 0 30px;
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+CenteredItems {
+}
+@media only screen and (max-width: 500px) {
+    .CenteredItems {
+        width: 90% !important;
+        margin-left: 5% !important;
+    }
+}
+@media only screen and (min-width: 500px) {
+    .CenteredItems {
+        width: 450px !important;
+        margin-left: calc(50% - 225px); !important;
+    }
+}
